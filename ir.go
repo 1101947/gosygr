@@ -1,15 +1,15 @@
 package gosygr
 
-type irStruct struct {
+type Struct struct {
 	stringFields map[string]string
-	structFields map[string]*irStruct
-	arrayFields map[string]*irArray
-	order []*string
+	structFields map[string]*Struct
+	arrayFields map[string]*Array
+	order []string
 }
 
-type irArray struct {
+type Array struct {
 	strings []string
-	structs []*irStruct
-	arrays []*irArray
+	structs []*Struct
+	arrays []*Array
 }
 
